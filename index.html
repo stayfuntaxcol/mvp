@@ -1,1 +1,54 @@
+<!doctype html>
 
+
+<section id="view-home" class="view active">
+<h2>Welcome</h2>
+<p>Nominations & voting are open in the current cycle.</p>
+<div id="homeStats"></div>
+</section>
+
+
+<section id="view-nominate" class="view">
+<h2>Nominate</h2>
+<form id="formNominate">
+<label>Person/Team name <input id="nmName" required /></label>
+<label>Department <input id="nmDept" /></label>
+<label>Category
+<select id="nmCategory" required></select>
+</label>
+<label>Why (max 600 chars)
+<textarea id="nmWhy" maxlength="600" required></textarea>
+</label>
+<button type="submit">Submit nomination</button>
+<output id="nmOut"></output>
+</form>
+<h3>Recent nominations</h3>
+<div id="nomineesList"></div>
+</section>
+
+
+<section id="view-vote" class="view">
+<h2>Vote</h2>
+<div id="voteCategories"></div>
+<output id="voteOut"></output>
+</section>
+
+
+<section id="view-kudos" class="view">
+<h2>Kudos</h2>
+<form id="formKudos">
+<label>To (name or team) <input id="kdTo" required /></label>
+<label>Message <input id="kdMsg" required /></label>
+<label><input type="checkbox" id="kdAnon"/> Post as anonymous</label>
+<button type="submit">Send kudos</button>
+<output id="kdOut"></output>
+</form>
+<div id="kudosList"></div>
+</section>
+</main>
+
+
+<script type="module" src="firebase-config.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
