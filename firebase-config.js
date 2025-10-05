@@ -1,4 +1,3 @@
-// Replace with your own Firebase config
 export const firebaseConfig = {  
   apiKey: "AIzaSyAS3b0hiLZIg1ZvkFw1mYO754uT-ropTy0",
   authDomain: "employee-award-nominations.firebaseapp.com",
